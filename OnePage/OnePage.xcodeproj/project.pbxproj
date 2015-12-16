@@ -130,7 +130,7 @@
 				F0E24E2C1C21085C002CA4E1 /* API */,
 				F0E24E341C210F27002CA4E1 /* Utility */,
 				F0E24E381C210F44002CA4E1 /* Helper */,
-				F0E24E651C211077002CA4E1 /* BaseViewCotrllers */,
+				F0E24E651C211077002CA4E1 /* BaseViewControllers */,
 				F0E24E661C2110B2002CA4E1 /* Controllers */,
 				F0E24E861C2110B2002CA4E1 /* Models */,
 				F0E24E8D1C2110B2002CA4E1 /* Views */,
@@ -192,7 +192,7 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
-		F0E24E651C211077002CA4E1 /* BaseViewCotrllers */ = {
+		F0E24E651C211077002CA4E1 /* BaseViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				F0E24ED51C211126002CA4E1 /* BaseViewController.h */,
@@ -200,7 +200,8 @@
 				F0E24ED81C211149002CA4E1 /* BaseNaviViewController.h */,
 				F0E24ED91C211149002CA4E1 /* BaseNaviViewController.m */,
 			);
-			name = BaseViewCotrllers;
+			name = BaseViewControllers;
+			path = BaseViewController;
 			sourceTree = "<group>";
 		};
 		F0E24E661C2110B2002CA4E1 /* Controllers */ = {
