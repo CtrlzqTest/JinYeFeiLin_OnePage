@@ -14,10 +14,28 @@
 
 @implementation RootViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+-(void)setViewControllers:(NSArray *)viewControllers {
+    
+    if (_viewControllers != viewControllers) {
+        _viewControllers = [viewControllers copy];
+    }
 }
+
+-(void)setCurrentViewController:(UIViewController *)currentViewController {
+    if (_currentViewController != currentViewController) {
+        _currentViewController = currentViewController;
+        [self.view addSubview:self.currentViewController.view];
+    }
+    
+}
+
+- (void)viewDidLoad {
+    
+    [super viewDidLoad];
+    self.currentViewController = self.viewControllers[0];
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

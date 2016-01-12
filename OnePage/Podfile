@@ -4,7 +4,7 @@
 # use_frameworks!
 
 target 'OnePage' do
-pod 'AFNetworking'
+pod 'AFNetworking', '~> 2.6.0'
 pod 'MJExtension'
 pod 'MBProgressHUD'
 pod 'Masonry'

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "BaseNaviViewController.h"
 #import "RootViewController.h"
+#import "ZQHomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -23,10 +24,13 @@
     self.window.backgroundColor = [UIColor whiteColor];
 
     RootViewController *rootVC = [[RootViewController alloc] init];
-    BaseNaviViewController *navi = [[BaseNaviViewController alloc] initWithRootViewController:rootVC];
+    ZQHomeViewController *homeVC = [[ZQHomeViewController alloc] init];
+    BaseNaviViewController *homeNavi = [[BaseNaviViewController alloc] initWithRootViewController:homeVC];
+    rootVC.viewControllers = @[homeNavi];
     
-    self.window.rootViewController = navi;
+    self.window.rootViewController = rootVC;
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

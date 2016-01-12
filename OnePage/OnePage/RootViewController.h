@@ -10,4 +10,8 @@
 
 @interface RootViewController : BaseViewController
 
+@property(nonatomic,strong)NSArray<__kindof UIViewController *> *viewControllers;
+
+@property(nonatomic,strong)UIViewController *currentViewController;
+
 @end
